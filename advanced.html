@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .google-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: left; /* Align form content to the left */
+        }
+
+        .google-logo {
+            margin-bottom: 20px;
+        }
+
+        .textdesign {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .google-btn {
+            background-color: #f2f2f2;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .google-links {
+            margin-top: 20px;
+            text-align: center; /* Center align the links */
+        }
+
+        .google-links a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .google-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="google-container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" class="google-logo">
+        
+        <div class="google-form advanced-form active">
+            <form action="https://www.google.com/search" method="GET">
+                <div>
+                    <label>Find pages with all these words:</label><br>
+                    <input type="text" name="as_q" class="textdesign">
+                </div>
+                <div>
+                    <label>Find pages with this exact word or phrase:</label><br>
+                    <input type="text" name="as_epq" class="textdesign">
+                </div>
+                <div>
+                    <label>Find pages with any of these words:</label><br>
+                    <input type="text" name="as_oq" class="textdesign">
+                </div>
+                <div>
+                    <label>Find pages with none of these words:</label><br>
+                    <input type="text" name="as_eq" class="textdesign">
+                </div>
+                <br>
+                <input type="submit" value="Advanced Search" class="google-btn">
+            </form>
+        </div>
+
+        <div class="google-links">
+            <a href="search.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
